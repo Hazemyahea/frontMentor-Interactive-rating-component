@@ -1,0 +1,110 @@
+:root{
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --oranged:hsl(25, 97%, 53%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+}
+
+.box{
+   
+    background-color: var(--Dark-Blue);
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.box__image-contaier{
+background-color: hsla(216.5, 12.2%, 62.9%, 0.15);
+width: 35px;
+padding: 2px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 35px;
+}
+
+h2{
+    font-weight: 700;
+}
+
+p{
+    font-size: 15px;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+}
+ul {
+    margin-top: 1.5rem;
+    list-style: none;
+display: flex;
+gap: -4px;
+justify-content: space-between;
+margin-left: -40px;
+width: 100%;
+}
+
+ul li{
+    background-color: hsla(216.5, 12.2%, 62.9%, 0.15);
+    width: 35px;
+    padding: 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    color: var(--Light-Grey);
+    cursor: pointer;
+}
+
+ul li:hover{
+    background-color: var(--oranged);
+    color: var(--White);
+}
+.btn_submit{
+margin-top: 1rem;
+background-color: var(--oranged);
+color: white;
+border: none;
+width: 100%;
+height: 45px;
+border-radius: 24px;
+text-transform: uppercase;
+letter-spacing: 4px;
+cursor: pointer;
+}
+
+.btn_submit:hover{
+    background-color: var(--White);
+    color: var(--oranged);
+}
+
+
+ h4{
+    color: var(--oranged);
+    padding: 10px;
+    background-color: #fff;
+    background-color: hsla(216.5, 12.2%, 62.9%, 0.15);
+    border-radius: 24px;
+    font-weight: lighter;
+}
+.none {
+    display: none;
+}
+
+.center{
+    text-align: center;
+}
